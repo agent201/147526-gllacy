@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Артём Васенин](https://htmlacademy.ru/profile/id147526).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Захарченко] (https://htmlacademy.ru/profile/drewtsure).
 
 ---
 
