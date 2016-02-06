@@ -6,7 +6,7 @@
 		<title>HTML Academy: Глейси</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="page__header">
 			<nav class="header-topmenu">
 				<ul class="header__topmenu-list">
 					<li><a href=""><img src="img/logo.png" width="154" height="64" alt="Главная" /></a></li>
@@ -22,13 +22,12 @@
 				<a href="#" class="header__cart">Пусто</a>
 			</div>
 			<div class="header__worktime">
-				<p>С 10 до 20 ежедневно<br>
+				С 10 до 20 ежедневно<br>
 					<span>8 812 450-25-25</span>
-				</p>
 			</div>
 		</header>
 
-		<main class="content">
+		<main class="page__content">
 			<div class="breadcrumbs">
 				<ul class="breadcrumbs__list">
 					<li><a href="#">Главная</a></li>
@@ -53,36 +52,36 @@
 					<input type="text" name="price">
 				</div>
 				<div class="filters__wrap">
-					<b class="filters__header">Жирность:</b>
+					<label>Жирность:</label>
 					<label>
-						<input name="fat" type="radio"> 0%
+						<input name="fat" type="radio">0%
 					</label>
 					<label>
-						<input name="fat" type="radio"> до 10%
+						<input name="fat" type="radio">до 10%
 					</label>
 					<label>
-						<input name="fat" type="radio"> до 30%
+						<input name="fat" type="radio">до 30%
 					</label>
 					<label>
-						<input name="fat" type="radio"> выше 30%
+						<input name="fat" type="radio">выше 30%
 					</label>
 				</div>
 				<div class="filters__wrap">
-					<b class="filters__header">Наполнители:</b>
+					<label>Наполнители:</label>
 					<label>
-						<input name="check_choko" type="checkbox" checked> шоколадные
+						<input name="check_choko" type="checkbox" checked>шоколадные
 					</label>
 					<label>
-						<input name="check_sugar" type="checkbox" checked> сахарные присыпки
+						<input name="check_sugar" type="checkbox" checked>сахарные присыпки
 					</label>
 					<label>
-						<input name="check_fruits" type="checkbox"> фрукты
+						<input name="check_fruits" type="checkbox">фрукты
 					</label>
 					<label>
-						<input name="check_surups" type="checkbox"> сиропы
+						<input name="check_surups" type="checkbox">сиропы
 					</label>
 					<label>
-						<input name="check_james" type="checkbox"> джемы
+						<input name="check_james" type="checkbox">джемы
 					</label>
 				</div>
 				<button type="submit">Применить</button>
@@ -193,7 +192,7 @@
 			</footer>
 		</main>
 
-		<footer class="footer">
+		<footer class="page__footer">
 			<div class="footer__social">
 				<ul class="footer__social-list">
 					<li><a class="footer__social-link footer__twitter" href="">twitter</a></li>
@@ -204,7 +203,7 @@
 			</div>
 			<nav class="footer__bootmenu">
 				<ul class="footer__bootmenu-list">
-					<li class="active"><a href="">Для поставщиков</a></li>
+					<li class="active"><b>Для поставщиков</b></li>
 					<li><a href="">Наши документы</a></li>
 					<li><a href="">О производстве</a></li>
 					<li><a href="">Экологические стандарты</a></li>
