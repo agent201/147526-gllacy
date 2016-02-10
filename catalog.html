@@ -2,32 +2,37 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 		<title>HTML Academy: Глейси</title>
 	</head>
 	<body>
-		<header class="page__header">
-			<nav class="header-topmenu">
+		<header class="page__header container">
+			<nav class="header__topmenu">
+				<a class="header__topmenu-logo" href=""><img src="img/logo.png" width="154" height="64" alt="Главная" /></a>
+
 				<ul class="header__topmenu-list">
-					<li><a href=""><img src="img/logo.png" width="154" height="64" alt="Главная" /></a></li>
-					<li><a href="">Каталог</a></li>
+					<li class="active"><a href="">Каталог</a></li>
 					<li><a href="">Доставка и оплата</a></li>
 					<li><a href="">О компании</a></li>
 				</ul>
 			</nav>
-			<div class="header__btns-block">
-				<button class="header__search"><img src="http://placehold.it/20x20" width="20" height="20" alt="search">
-			</div></button>
-				<a href="#" class="header__login">Вход</a>
-				<a href="#" class="header__cart">Пусто</a>
-			</div>
-			<div class="header__worktime">
-				С 10 до 20 ежедневно<br>
-					<span>8 812 450-25-25</span>
+			<div class="header__info">
+				<div class="header__info-btns">
+					<a href="#" class="header__info-search">
+						<img src="http://placehold.it/20x20" width="20" height="20" alt="search">
+					</a>
+					<a href="#" class="header__info-login">Вход</a>
+					<a href="#" class="header__info-cart">Пусто</a>
+				</div>
+				<div class="header__info-worktime">
+					С 10 до 20 ежедневно<br>
+						<span>8 812 450-25-25</span>
+				</div>
 			</div>
 		</header>
 
-		<main class="page__content">
+		<main class="page__content container bordered">
 			<div class="breadcrumbs">
 				<ul class="breadcrumbs__list">
 					<li><a href="#">Главная</a></li>
@@ -192,7 +197,7 @@
 			</footer>
 		</main>
 
-		<footer class="page__footer">
+		<footer class="page__footer container">
 			<div class="footer__social">
 				<ul class="footer__social-list">
 					<li><a class="footer__social-link footer__twitter" href="">twitter</a></li>
