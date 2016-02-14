@@ -7,6 +7,7 @@
 		<title>HTML Academy: Глейси</title>
 	</head>
 	<body class="bg-1">
+		<div class="popup__overlay"></div>
 		<header class="page__header container">
 			<nav class="header__topmenu">
 				<a href="index.html" class="header__topmenu-logo"><img src="img/logo.png" width="154" height="64" alt="Главная" /></a>
@@ -131,7 +132,7 @@
 				</div>
 				<div class="filters__wrap filters__wrap-price">
 					<div class="price-controls">
-						<p>Цена
+						<p class="filters__label-price">Цена
 							<input name="min-price" type="text" value="100">
 							руб. -
 						 	<input name="max-price" type="text" value="500"> руб.
@@ -146,39 +147,52 @@
 					</div>
 				</div>
 				<div class="filters__wrap filters__wrap-fat">
-					<label class="filters__label-fat">Жирность:</label><br>
-					<label>
-						<input name="fat" type="radio">0%
-					</label>
-					<label>
-						<input name="fat" type="radio">до 10%
-					</label>
-					<label>
-						<input name="fat" type="radio">до 30%
-					</label>
-					<label>
-						<input name="fat" type="radio">выше 30%
-					</label>
+					<span class="filters__label-fat">Жирность:</span>
+					<div class="filters__fat-bg">
+						<label>
+							<input name="fat" type="radio" checked>
+							<div class="filters__checkbox-fat"><span></span></div><span>0%</span>
+						</label>
+						<label>
+							<input name="fat" type="radio">
+							<div class="filters__checkbox-fat"><span></span></div><span>до 10%</span>
+						</label>
+						<label>
+							<input name="fat" type="radio">
+							<div class="filters__checkbox-fat"><span></span></div><span>до 30%</span>
+						</label>
+						<label>
+							<input name="fat" type="radio">
+							<div class="filters__checkbox-fat last"><span></span></div><span>выше 30%</span>
+						</label>
+					</div>
 				</div>
 				<div class="filters__wrap filters__wrap-mixins">
-					<label class="filters__label-mixins">Наполнители:</label><br>
-					<label>
-						<input name="check_choko" type="checkbox" checked>шоколадные
-					</label>
-					<label>
-						<input name="check_sugar" type="checkbox" checked>сахарные присыпки
-					</label>
-					<label>
-						<input name="check_fruits" type="checkbox">фрукты
-					</label>
-					<label>
-						<input name="check_surups" type="checkbox">сиропы
-					</label>
-					<label>
-						<input name="check_james" type="checkbox">джемы
-					</label>
+					<span class="filters__label-mixins">Наполнители:</span><br>
+					<div class="filters__mixins-bg">
+						<label>
+							<input name="check_choko" type="checkbox" checked>
+							<div class="filters__checkbox-mix"><span></span></div><span>шоколадные</span>
+						</label>
+						<label>
+							<input name="check_sugar" type="checkbox" checked>
+							<div class="filters__checkbox-mix"><span></span></div><span>сахарные присыпки</span>
+						</label>
+						<label>
+							<input name="check_fruits" type="checkbox">
+							<div class="filters__checkbox-mix"><span></span></div><span>фрукты</span>
+						</label>
+						<label>
+							<input name="check_surups" type="checkbox">
+							<div class="filters__checkbox-mix"><span></span></div><span>сиропы</span>
+						</label>
+						<label>
+							<input name="check_james" type="checkbox">
+							<div class="filters__checkbox-mix last"><span></span></div><span>джемы</span>
+						</label>
+					</div>
 				</div>
-				<button type="submit">Применить</button>
+				<button class="submit" type="submit">Применить</button>
 
 			</section>
 
