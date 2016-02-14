@@ -1176,6 +1176,149 @@ h2 {
 	margin: 10px 0 30px 0;
 }
 
+/* filters */
+.filters {
+	margin-bottom: 40px;
+	width: 78%;
+}
+
+.filters__wrap {
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+}
+
+.filters__label-sort,
+.filters__label-price,
+.filters__label-fat,
+.filters__label-mixins {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Roboto', Arial, sans-serif;
+	padding-left: 15px;
+
+}
+
+.filters__wrap-sort select {
+	border: none;
+	background: #a9bab0;
+	padding: 0 50px 0 15px;
+	height: 38px;
+	border-radius: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+.filters__wrap-sort select:hover {
+	background: #fff;
+	color: #343434;
+}
+
+.filters__wrap-sort::after {
+	content: '▼';
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	color: #fff;
+}
+
+.filters__wrap-price {
+/*	height: 60px;
+	background: #a9bab0;
+	border-radius: 40px;*/
+	top: -30px;
+	width: 222px;
+	position: relative;
+}
+
+
+.price-controls {
+  /*font-size: 0;*/
+  color: #fff;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.price-controls p {
+	margin: 0;
+	padding-left: 15px;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  width: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: none;
+}
+
+.range-controls {
+	position: relative;
+	padding: 16px 15px;
+	background: #a9bab0;
+	border-radius: 40px;
+	/*margin-top: -30px;*/
+}
+
+.range-controls .scale {
+  height: 5px;
+  background: #d1d9d2;
+}
+
+.range-controls .bar {
+  width: 52%;
+  height: 5px;
+  background: #f8f7f4;
+  margin-left: 30px;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #f8f7f4;
+}
+
+.range-controls .toggle-min {
+  left: 35px;
+  top: 10px;
+}
+
+.range-controls .toggle-max {
+  left: 135px;
+  top: 10px;
+}
+
+.filters__wrap-fat input {
+	display: none;
+}
+
+.filters__wrap-fat input::before {
+	content: '\2022';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
 /* products list */
 
 .catalog-page .catalog__item {

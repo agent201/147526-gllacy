@@ -121,18 +121,32 @@
 			</header>
 
 			<section class="filters">
-				<label for="sort">Сортировка</label>
-				<div class="filters__wrap">
+				<div class="filters__wrap filters__wrap-sort">
+				<label class="filters__label-sort" for="sort">Сортировка</label><br>
 					<select name="sort">
-						<option value="1">По популярности</option>
+						<option value="1">Сначала недорогие</option>
+						<option value="2">Сначала дорогие</option>
+						<option value="3">По жирности</option>
 					</select>
 				</div>
-				<label for="price">Цена 100 руб - 500 руб</label>
-				<div class="filters__wrap">
-					<input type="text" name="price">
+				<div class="filters__wrap filters__wrap-price">
+					<div class="price-controls">
+						<p>Цена
+							<input name="min-price" type="text" value="100">
+							руб. -
+						 	<input name="max-price" type="text" value="500"> руб.
+						 </p>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
+					</div>
 				</div>
-				<div class="filters__wrap">
-					<label>Жирность:</label>
+				<div class="filters__wrap filters__wrap-fat">
+					<label class="filters__label-fat">Жирность:</label><br>
 					<label>
 						<input name="fat" type="radio">0%
 					</label>
@@ -146,8 +160,8 @@
 						<input name="fat" type="radio">выше 30%
 					</label>
 				</div>
-				<div class="filters__wrap">
-					<label>Наполнители:</label>
+				<div class="filters__wrap filters__wrap-mixins">
+					<label class="filters__label-mixins">Наполнители:</label><br>
 					<label>
 						<input name="check_choko" type="checkbox" checked>шоколадные
 					</label>
@@ -172,28 +186,28 @@
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-1.png" width="267" height="267" alt="catalog__img-1">
-						<div class="catalog__price">310 /кг</div>
+						<div class="catalog__price">310 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-2.png" width="267" height="267" alt="catalog__img-2">
-						<div class="catalog__price">380 /кг</div>
+						<div class="catalog__price">380 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочно-кофейное с кусочками шоколада</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-3.png" width="267" height="267" alt="catalog__img-3">
-						<div class="catalog__price">355  /кг</div>
+						<div class="catalog__price">355 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-4.png" width="267" height="267" alt="catalog__img-4">
-						<div class="catalog__price">415 /кг</div>
+						<div class="catalog__price">415 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></div>
 				</div>
@@ -201,28 +215,28 @@
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-5.png" width="267" height="267" alt="catalog__img-1">
-						<div class="catalog__price">325 /кг</div>
+						<div class="catalog__price">325 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное с брусничным джемом</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-6.png" width="267" height="267" alt="catalog__img-2">
-					<div class="catalog__price">410 /кг</div>
+					<div class="catalog__price">410 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочно-черничное с цельными ягодами черники</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-7.png" width="267" height="267" alt="catalog__img-3">
-						<div class="catalog__price">375  /кг</div>
+						<div class="catalog__price">375 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-8.png" width="267" height="267" alt="catalog__img-4">
-						<div class="catalog__price">320 /кг</div>
+						<div class="catalog__price">320 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное с шоколадной стружкой</a></div>
 				</div>
@@ -230,28 +244,28 @@
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-9.png" width="267" height="267" alt="catalog__img-1">
-						<div class="catalog__price">440 /кг</div>
+						<div class="catalog__price">440 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочно-ванильное с кусочками шоколада</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-10.png" width="267" height="267" alt="catalog__img-2">
-						<div class="catalog__price">435 /кг</div>
+						<div class="catalog__price">435 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное с минтоловым сиропом</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-11.png" width="267" height="267" alt="catalog__img-3">
-						<div class="catalog__price">355  /кг</div>
+						<div class="catalog__price">355 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное с кусочками чёрного шоколада</a></div>
 				</div>
 				<div class="catalog__item">
 					<div class="catalog__img">
 						<img src="img/product-12.png" width="267" height="267" alt="catalog__img-4">
-						<div class="catalog__price">420 /кг</div>
+						<div class="catalog__price">420 <b></b>/кг</div>
 					</div>
 					<div class="catalog__desc"><a href="#">Сливочное с мятным сиропом</a></div>
 				</div>
