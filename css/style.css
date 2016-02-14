@@ -1211,16 +1211,13 @@ h2 {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
 	font-family: 'Roboto', Arial, sans-serif;
 }
 
-.filters__wrap-sort select:hover {
-	background: #fff;
-	color: #343434;
-}
-
-.filters__wrap-sort::after {
-	content: '▼';
+.filters__sort-arrow {
 	display: inline-block;
 	width: 10px;
 	height: 16px;
@@ -1228,6 +1225,15 @@ h2 {
 	top: 30px;
 	right: 20px;
 	color: #fff;
+}
+
+.filters__wrap-sort select:hover {
+	background: #fff;
+	color: #343434;
+}
+
+.filters__wrap-sort select:hover + .filters__sort-arrow {
+	color: #343434;
 }
 
 .filters__wrap-price {
@@ -1442,6 +1448,7 @@ span.filters__label-mixins {
 .catalog-page .catalog__item {
 	margin-right: 2.5%;
 	margin-left: 0%;
+	position: relative;
 }
 
 .catalog-page .catalog__item:nth-child(4n) {
@@ -1455,6 +1462,65 @@ span.filters__label-mixins {
 
 .catalog-page .catalog__desc {
 	min-height: 80px;
+}
+
+.catalog-page .catalog__item-hover {
+	position: absolute;
+	width: 104%;
+	height: 420;
+	top: -5px;
+	left: -5px;
+	background: rgba(255,255,255,0.3);
+	z-index: 10;
+	border-radius: 5px;
+	vertical-align: bottom;
+	text-align: center;
+	display: none;
+}
+
+.catalog__item-hover .readmore {
+	position: absolute;
+	bottom: 20px;
+	display: inline-block;
+	text-align: center;
+	left: 50%;
+	margin-left: -92px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 24px;
+	text-decoration: none;
+	font-weight: 500;
+	font-family: 'Roboto', Arial, sans-serif;
+	padding: 8px 25px;
+	background: linear-gradient(to top, #ca3926, #f06643);
+	background: -moz-linear-gradient(to top, #ca3926, #f06643);
+	background: -o-linear-gradient(to top, #ca3926, #f06643);
+	background: -webkit-linear-gradient(to top, #ca3926, #f06643);
+	border-radius: 30px;
+	border-bottom: none;
+}
+
+.catalog__item-hover .readmore:hover {
+	background: linear-gradient(to top, #ec6f5e, #f48569);
+	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
+	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
+	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
+	color: #fff;
+	border-bottom: none;
+}
+
+.catalog__item-hover .readmore:active {
+	background: linear-gradient(to bottom, #ca3926, #f06643);
+	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
+	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
+	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
+	box-shadow: 0 -2px 2px #942718;
+	color: #fff;
+	border-bottom: none;
+}
+
+.catalog-page .catalog__item:hover .catalog__item-hover {
+	display: block;
 }
 
 /* pagination */
