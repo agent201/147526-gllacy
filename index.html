@@ -30,8 +30,9 @@
 			<div class="header__info">
 				<div class="header__info-btns">
 					<div class="header__info-cart">
-						<i class="icon-cart"></i>
-						Пусто
+						<a href="/cart">
+							<i class="icon-cart"></i>Пусто
+						</a>
 
 						<div class="header__cart-list">
 							<table class="header__products-list">
@@ -83,8 +84,9 @@
 						</div>
 					</div>
 					<div href="#" class="header__info-login">
-						<i class="icon-login"></i>
-						Вход
+						<a href="/login">
+							<i class="icon-login"></i>Вход
+						</a>
 
 						<form action="" class="header__login-form">
 							<input class="header__login-mail" type="text" placeholder="Электронная почта">
@@ -97,7 +99,7 @@
 						</form>
 					</div>
 					<div class="header__info-search">
-						<i class="icon-search"></i>
+						<a href="/search"><i class="icon-search"></i></a>
 
 						<form action="" class="header__search-form" method="post">
 							<input type="text" class="header__search-input" placeholder="Что ищем?">
@@ -117,21 +119,21 @@
 					<img class="slider__img" src="img/slide-icecream-1.png" width="655" height="595" alt="photo-1" />
 					<figcaption class="slider__desc">
 						<p>Крем-брюле и пломбир с малиновым джемом</p>
-						<a class="readmore" href="">Давайте оба!</a>
+						<a class="readmore btn-red" href="">Давайте оба!</a>
 					</figcaption>
 				</figure>
 				<figure class="slider__images slide-2">
 					<img class="slider__img" src="img/slide-icecream-2.png" width="655" height="595" alt="photo-2" />
 					<figcaption class="slider__desc">
 						<p>Шоколадный пломбир и лимонный сорбет</p>
-						<a class="readmore" href="">Давайте оба!</a>
+						<a class="readmore btn-red" href="">Давайте оба!</a>
 					</figcaption>
 				</figure>
 				<figure class="slider__images slide-3">
 					<img class="slider__img" src="img/slide-icecream-3.png" width="655" height="595" alt="photo-3" />
 					<figcaption class="slider__desc">
 						<p>Пломбир с помадкой и клубничный щербет</p>
-						<a class="readmore" href="">Давайте оба!</a>
+						<a class="readmore btn-red" href="">Давайте оба!</a>
 					</figcaption>
 				</figure>
 				<ul class="slider__nav">
@@ -145,12 +147,12 @@
 				<div class="actions__item block-left">
 					<h2 class="actions__header">Малинка даром!</h2>
 					<p class="actions__desc">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="actions__link" href="">Хочу варенье!</a>
+					<a class="actions__link btn-red" href="">Хочу варенье!</a>
 				</div>
 				<div class="actions__item block-right">
 					<h2 class="actions__header">Шоколадки даром!</h2>
 					<p class="actions__desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="actions__link" href="">Хочу шоколадки!</a>
+					<a class="actions__link btn-red" href="">Хочу шоколадки!</a>
 				</div>
 			</section>
 
@@ -241,7 +243,7 @@
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 					<form action="#" class="news__form" method="post">
 						<input class="news__input-mail" type="email" name="email" placeholder="Электронная почта">
-						<button class="news__btn-submit" type="submit">Отправить</button>
+						<button class="news__btn-submit btn-red" type="submit">Отправить</button>
 					</form>
 				</div>
 
@@ -254,7 +256,7 @@
 						<strong class="map__strong-tel">8 812 450-25-25</strong><br>
 						(с 10 до 20 ежедневно)
 					</p>
-					<a href="" class="map__form-link">
+					<a href="/form" class="map__form-link btn-red">
 						Форма обратной связи
 					</a>
 				</div>
@@ -272,7 +274,7 @@
 					<input class="map__modal-name" type="text" name="name" placeholder="Как вас зовут?">
 					<input class="map__modal-mail" type="mail"  name="mail" placeholder="Ваша почта для ответа?">
 					<textarea class="map__modal-message" name="message" placeholder="Напишите что нибудь..."></textarea><br>
-					<button class="map__modal-submit" type="submit">Войти</button>
+					<button class="map__modal-submit btn-red" type="submit">Войти</button>
 				</form>
 			</div>
 

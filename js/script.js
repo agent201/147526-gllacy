@@ -57,6 +57,7 @@ map__form_link.addEventListener("click", function(event) {
 	console.log(btn_slide_3);
 	map__modal.classList.toggle("active");
 	popup__overlay.classList.toggle("active");
+	return false;
 });
 
 map__modal_close.addEventListener("click", function(event) {

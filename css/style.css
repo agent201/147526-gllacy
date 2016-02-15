@@ -84,6 +84,43 @@ h2 {
 	color: #353535;
 }
 
+.btn-red {
+	display: inline-block;
+	background: #f16743;
+	border-radius: 40px;
+	color: #fff;
+	font-family: 'Roboto', Arial, sans-serif;
+	text-decoration: none;
+	background: linear-gradient(to top, #e74b36, #f26843);
+	background: -moz-linear-gradient(to top, #e74b36, #f26843);
+	background: -o-linear-gradient(to top, #e74b36, #f26843);
+	background: -webkit-linear-gradient(to top, #e74b36, #f26843);
+	box-shadow: 0 2px 2px #975a4b;
+	text-shadow: 0px 2px 5px #a0200b;
+	border: none;
+}
+
+.btn-red:hover {
+	background: #f58669;
+	color: #fff;
+	background: linear-gradient(to top, #f58669, #ec6f5e);
+	background: -moz-linear-gradient(to top, #f58669, #ec6f5e);
+	background: -o-linear-gradient(to top, #f58669, #ec6f5e);
+	background: -webkit-linear-gradient(to top, #f58669, #ec6f5e);
+	box-shadow: 0 2px 2px #975a4b;
+}
+
+.btn-red:active {
+	background: #d84732;
+	color: #fff;
+	background: linear-gradient(to top, #d84732, #e1613e);
+	background: -moz-linear-gradient(to top, #d84732, #e1613e);
+	background: -o-linear-gradient(to top, #d84732, #e1613e);
+	background: -webkit-linear-gradient(to top, #d84732, #e1613e);
+	box-shadow: 0 -2px 2px #975a4b;
+	border-bottom: none;
+}
+
 /* header */
 
 .page__header {
@@ -215,7 +252,7 @@ h2 {
 }
 
 .header__info {
-	width: 29%;
+	/*width: 29%;*/
 	float: right;
 	text-align: right;
 	margin-top: 20px;
@@ -283,7 +320,6 @@ h2 {
 
 .header__info-search:hover .icon-search {
 	background-position: 0 -25px;
-	cursor: pointer;
 }
 
 .header__info-login {
@@ -403,6 +439,14 @@ h2 {
 
 .header__info-login:hover {
 	background: #f8f7f4;
+}
+
+.header__info-login a {
+	border: none;
+	color: #fff;
+}
+
+.header__info-login:hover a {
 	color: #323232;
 }
 
@@ -566,6 +610,14 @@ h2 {
 
 .header__info-cart:hover {
 	background: #f8f7f4;
+}
+
+.header__info-cart a {
+	color: #fff;
+	border: none;
+}
+
+.header__info-cart:hover a {
 	color: #323232;
 }
 
@@ -631,42 +683,11 @@ h2 {
 }
 
 .slider__desc .readmore {
-	display: inline-block;
 	font-size: 32px;
 	line-height: 62px;
-	background: #f16743;
 	padding: 0 40px 3px 40px;
-	border-radius: 40px;
 	color: #fff;
-	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 700;
-	text-decoration: none;
-	background: linear-gradient(to top, #e74b36, #f26843);
-	background: -moz-linear-gradient(to top, #e74b36, #f26843);
-	background: -o-linear-gradient(to top, #e74b36, #f26843);
-	background: -webkit-linear-gradient(to top, #e74b36, #f26843);
-	box-shadow: 0 2px 2px #975a4b;
-	text-shadow: 0px 2px 5px #a0200b;
-	border: none;
-}
-
-.slider__desc .readmore:hover {
-	background: #f58669;
-	background: linear-gradient(to top, #f58669, #ec6f5e);
-	background: -moz-linear-gradient(to top, #f58669, #ec6f5e);
-	background: -o-linear-gradient(to top, #f58669, #ec6f5e);
-	background: -webkit-linear-gradient(to top, #f58669, #ec6f5e);
-	box-shadow: 0 2px 2px #975a4b;
-}
-
-.slider__desc .readmore:active {
-	background: #d84732;
-	background: linear-gradient(to top, #d84732, #e1613e);
-	background: -moz-linear-gradient(to top, #d84732, #e1613e);
-	background: -o-linear-gradient(to top, #d84732, #e1613e);
-	background: -webkit-linear-gradient(to top, #d84732, #e1613e);
-	box-shadow: 0 -2px 2px #975a4b;
-	border-bottom: none;
 }
 
 .slider__nav {
@@ -752,42 +773,14 @@ h2 {
 
 .actions__link {
 	text-align: right;
-	display: inline-block;
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	color: #fff;
 	font-size: 18px;
 	line-height: 45px;
 	padding: 0 25px 4px 25px;
-	text-decoration: none;
 	font-weight: 500;
-	font-family: 'Roboto', Arial, sans-serif;
-	background: linear-gradient(to top, #ca3926, #f06643);
-	background: -moz-linear-gradient(to top, #ca3926, #f06643);
-	background: -o-linear-gradient(to top, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to top, #ca3926, #f06643);
 	border-radius: 30px;
-	border-bottom: none;
-}
-
-.actions__link:hover {
-	background: linear-gradient(to top, #ec6f5e, #f48569);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
-	color: #fff;
-	border-bottom: none;
-}
-
-.actions__link:active {
-	background: linear-gradient(to bottom, #ca3926, #f06643);
-	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
-	box-shadow: 0 -2px 2px #942718;
-	color: #fff;
-	border-bottom: none;
 }
 
 /* catalog */
@@ -1018,38 +1011,10 @@ h2 {
 	float: right;
 	padding: 0 3%;
 	height: 40px;
-	display: inline-block;
-	border: none;
 	border-radius: 20px;
-	color: #fff;
 	font-size: 17px;
 	line-height: 24px;
 	font-weight: 500;
-	font-family: 'Roboto', Arial, sans-serif;
-	background: linear-gradient(to bottom, #f26843, #e74b36);
-	background: -moz-linear-gradient(to bottom, #f26843, #e74b36);
-	background: -o-linear-gradient(to bottom, #f26843, #e74b36);
-	background: -webkit-linear-gradient(to bottom, #f26843, #e74b36);
-	box-shadow: 0 2px 2px #ac1000;
-}
-
-.news__btn-submit:hover {
-	background: linear-gradient(to top, #ec6f5e, #f48569);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
-	color: #fff;
-	border-bottom: none;
-}
-
-.news__btn-submit:active {
-	background: linear-gradient(to bottom, #ca3926, #f06643);
-	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
-	box-shadow: 0 -2px 2px #942718;
-	color: #fff;
-	border-bottom: none;
 }
 
 /* map */
@@ -1094,39 +1059,11 @@ h2 {
 
 .map__form-link {
 	text-align: right;
-	display: inline-block;
-	color: #fff;
 	font-size: 18px;
 	line-height: 45px;
 	padding: 0 25px 4px 25px;
-	text-decoration: none;
 	font-weight: 500;
-	font-family: 'Roboto', Arial, sans-serif;
-	background: linear-gradient(to top, #ca3926, #f06643);
-	background: -moz-linear-gradient(to top, #ca3926, #f06643);
-	background: -o-linear-gradient(to top, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to top, #ca3926, #f06643);
 	border-radius: 30px;
-	border-bottom: none;
-}
-
-.map__form-link:hover {
-	background: linear-gradient(to top, #ec6f5e, #f48569);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
-	color: #fff;
-	border-bottom: none;
-}
-
-.map__form-link:active {
-	background: linear-gradient(to bottom, #ca3926, #f06643);
-	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
-	box-shadow: 0 -2px 2px #942718;
-	color: #fff;
-	border-bottom: none;
 }
 
 /* ----------- catalog page --------- */
@@ -1481,42 +1418,14 @@ span.filters__label-mixins {
 .catalog__item-hover .readmore {
 	position: absolute;
 	bottom: 20px;
-	display: inline-block;
 	text-align: center;
 	left: 50%;
 	margin-left: -92px;
-	color: #fff;
 	font-size: 15px;
 	line-height: 24px;
-	text-decoration: none;
 	font-weight: 500;
-	font-family: 'Roboto', Arial, sans-serif;
 	padding: 8px 25px;
-	background: linear-gradient(to top, #ca3926, #f06643);
-	background: -moz-linear-gradient(to top, #ca3926, #f06643);
-	background: -o-linear-gradient(to top, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to top, #ca3926, #f06643);
 	border-radius: 30px;
-	border-bottom: none;
-}
-
-.catalog__item-hover .readmore:hover {
-	background: linear-gradient(to top, #ec6f5e, #f48569);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
-	color: #fff;
-	border-bottom: none;
-}
-
-.catalog__item-hover .readmore:active {
-	background: linear-gradient(to bottom, #ca3926, #f06643);
-	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
-	box-shadow: 0 -2px 2px #942718;
-	color: #fff;
-	border-bottom: none;
 }
 
 .catalog-page .catalog__item:hover .catalog__item-hover {
@@ -1814,37 +1723,9 @@ span.filters__label-mixins {
 
 .map__modal-submit {
 	float: right;
-	display: inline-block;
-	color: #fff;
 	font-size: 15px;
 	line-height: 36px;
 	padding: 0 25px;
-	text-decoration: none;
 	font-weight: 500;
-	font-family: 'Roboto', Arial, sans-serif;
-	background: linear-gradient(to top, #ca3926, #f06643);
-	background: -moz-linear-gradient(to top, #ca3926, #f06643);
-	background: -o-linear-gradient(to top, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to top, #ca3926, #f06643);
 	border-radius: 30px;
-	border: none;
 }
-
-.map__modal-submit:hover {
-	background: linear-gradient(to top, #ec6f5e, #f48569);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
-	color: #fff;
-}
-
-.map__modal-submit:active {
-	background: linear-gradient(to bottom, #ca3926, #f06643);
-	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
-	box-shadow: 0 -2px 2px #942718;
-	color: #fff;
-}
-
-
