@@ -57,7 +57,7 @@ a:hover, a:active {
 	max-width: 1200px;
 	position: relative;
 	margin: 0 auto;
-	padding: 0 28px;
+	padding: 0 27px;
 	box-sizing: border-box;
 }
 .container::after,
@@ -125,7 +125,7 @@ h2 {
 
 .page__header {
 	min-height: 54px;
-	padding-top: 10px;
+	padding-top: 9px;
 }
 
 .header__topmenu {
@@ -139,6 +139,7 @@ h2 {
 	float: left;
 	border: none;
 	margin-right: 15px;
+	margin-left: -5px;
 }
 
 .header__topmenu-list {
@@ -153,8 +154,8 @@ h2 {
 .header__topmenu-list > li {
 	display: inline-block;
 	min-height: 51px;
-	margin-left: 5px;
-	padding-top: 20px;
+	margin-left: 3px;
+	padding-top: 14px;
 	position: relative;
 }
 
@@ -184,7 +185,10 @@ h2 {
 	color: #333;
 }
 
-.header__topmenu-list > li > a:hover::after,
+.header__topmenu-list > li > a:hover::after {
+	border-color: #f7f6f3;
+}
+
 .header__topmenu-list > .active > a::after
  {
 	border: none;
@@ -194,7 +198,7 @@ h2 {
 	position: absolute;
 	list-style: none;
 	margin: 5px 0 0 -10px;
-	padding: 12px 0px 5px 0px;
+	padding: 3px 0px 5px 0px;
 	background: #f7f6f3;
 	border-radius: 5px;
 	z-index: 10;
@@ -217,17 +221,30 @@ h2 {
 	/*height: 28px;*/
 }
 
-.header__topmenu-list ul li a,
-.header__topmenu-list ul li b {
+.header__topmenu-list ul li a {
 	text-decoration: none;
 	color: #343434;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 14px;
 	display: inline-block;
+	font-weight: normal;
 	width: 100%;
 	height: auto;
 	padding: 5px 20px;
 	box-sizing: border-box;
+	border: none;
+}
+
+.header__topmenu-list ul li:first-child a {
+	font-weight: bold;
+}
+
+.header__topmenu-list ul li:first-child a::after {
+	content: '';
+	display: block;
+	width: 120%;
+	margin: 5px 0 0 -10px;
+	border-bottom: 1px solid #d1d0ce;
 }
 
 .header__topmenu-list ul li a:hover {
@@ -243,31 +260,23 @@ h2 {
 	color: #fff;
 }
 
-.header__topmenu-list ul li b:after {
-	content: '';
-	display: block;
-	width: 120%;
-	margin: 5px 0 0 -10px;
-	border-bottom: 1px solid #d1d0ce;
-}
-
 .header__info {
 	/*width: 29%;*/
 	float: right;
 	text-align: right;
-	margin-top: 20px;
+	margin-top: 15px;
 	position: relative;
 }
 
 .header__info-btns {
 	text-align: right;
-	width: 244px;
+	/*width: 244px;*/
 }
 
 .header__info-search {
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 32px;
+	height: 32px;
 	background: #a2b8ac;
 	border-radius: 50%;
 	position: relative;
@@ -281,8 +290,8 @@ h2 {
 	width: 20px;
 	height: 20px;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 7px;
+	left: 7px;
 }
 
 .header__search-form {
@@ -326,13 +335,16 @@ h2 {
 	display: inline-block;
 	background: #a2b8ac;
 	position: relative;
+	vertical-align: middle;
 	border-radius: 20px;
-	padding: 7px 15px 5px 15px;
+	padding: 0px 17px 0px 15px;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 14px;
+	line-height: 30px;
 	color: #fff;
 	float: right;
-	margin-right: 8px;
+	margin-top: 0px;
+	margin-right: 10px;
 }
 
 .icon-login {
@@ -341,13 +353,14 @@ h2 {
 	height: 20px;
 	background: url(../img/sprite.png) -20px 0 no-repeat;
 	float: left;
-	margin-right: 10px;
+	margin-right: 7px;
+	margin-top: 4px;
 	z-index: 10;
 }
 
 .header__login-form {
 	width: 275px;
-	height: 176px;
+	height: 140px;
 	background: #f8f7f4;
 	border-radius: 5px;
 	position: absolute;
@@ -356,7 +369,7 @@ h2 {
 	z-index: 17;
 	padding: 20px 18px;
 	box-shadow: 0 20px 20px rgba(0,0,0,0.4);
-	display: none;
+	/*display: none;*/
 }
 
 .header__login-form::after {
@@ -383,7 +396,7 @@ h2 {
 	width: 50%;
 	float: right;
 	text-align: left;
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 .header__login-links a {
@@ -392,7 +405,7 @@ h2 {
 	text-decoration: underline;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 13px;
-	line-height: 24px;
+	line-height: 17px;
 }
 
 .header__login-links a:hover {
@@ -400,53 +413,25 @@ h2 {
 }
 
 .header__login-submit {
-	margin-top: 15px;
+	margin-top: 5px;
 	float: left;
-	display: inline-block;
-	color: #fff;
-	font-size: 18px;
-	line-height: 45px;
-	padding: 0 25px 4px 25px;
-	text-decoration: none;
+	font-size: 15px;
+	line-height: 24px;
+	padding: 5px 25px 6px 25px;
 	font-weight: 500;
-	font-family: 'Roboto', Arial, sans-serif;
-	background: linear-gradient(to top, #ca3926, #f06643);
-	background: -moz-linear-gradient(to top, #ca3926, #f06643);
-	background: -o-linear-gradient(to top, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to top, #ca3926, #f06643);
 	border-radius: 30px;
-	border: none;
-}
-
-.header__login-submit:hover {
-	background: linear-gradient(to top, #ec6f5e, #f48569);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -o-linear-gradient(to top, #ec6f5e, #f48569);
-	background: -webkit-linear-gradient(to top, #ec6f5e, #f48569);
-	color: #fff;
-	border: none;
-}
-
-.header__login-submit:active {
-	background: linear-gradient(to bottom, #ca3926, #f06643);
-	background: -moz-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -o-linear-gradient(to bottom, #ca3926, #f06643);
-	background: -webkit-linear-gradient(to bottom, #ca3926, #f06643);
-	box-shadow: 0 -2px 2px #942718;
-	color: #fff;
-	border: none;
 }
 
 .header__info-login:hover {
 	background: #f8f7f4;
 }
 
-.header__info-login a {
+.header__info-login > a {
 	border: none;
 	color: #fff;
 }
 
-.header__info-login:hover a {
+.header__info-login:hover > a {
 	color: #323232;
 }
 
@@ -463,9 +448,10 @@ h2 {
 	background: #a2b8ac;
 	position: relative;
 	border-radius: 20px;
-	padding: 7px 15px 5px 15px;
+	padding: 0px 15px 0px 15px;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 14px;
+	line-height: 30px;
 	text-decoration: none;
 	color: #fff;
 	float: right;
@@ -482,7 +468,8 @@ h2 {
 	height: 20px;
 	background: url(../img/sprite.png) -46px 0 no-repeat;
 	float: left;
-	margin-right: 10px;
+	margin-top: 5px;
+	margin-right: 7px;
 }
 
 .header__cart-list {
@@ -519,18 +506,18 @@ h2 {
 	padding-top: 17px;
 }
 
-.header__product-del {
+td.header__product-del {
 	width: 25px;
 	text-align: left;
+	vertical-align: baseline;
 }
 
 .header__product-del a {
-	font-size: 40px;
+	font-size: 30px;
+	line-height: 22px;
 	color: #333;
 	font-weight: 100;
 	display: inline-block;
-	width: 100%;
-	height: auto;
 	border: none;
 	transform: rotate(45deg);
 	vertical-align: middle;
@@ -540,14 +527,36 @@ h2 {
 	color: #ec593c;
 }
 
-.header__product-img {
+td.header__product-img {
 	width: 55px;
 	text-align: center;
+	vertical-align: top;
+}
+
+.header__product-img a {
+	border-bottom: none;
+	display: inline-block;
+	width: 100%;
+	height: auto;
 }
 
 .header__product-name {
 	width: 235px;
 	text-align: left;
+	vertical-align: top;
+}
+
+.header__product-name a {
+	color: #333333;
+	border-bottom: none;
+	font-size: 13px;
+	line-height: 15px;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: normal;
+}
+
+.header__product-name a:hover {
+	color: #ec593c;
 }
 
 .header__product-price {
@@ -608,26 +617,29 @@ h2 {
 	border: none;
 }
 
-.header__info-cart:hover {
+.header__info-cart:hover,
+.header__info-cart.active{
 	background: #f8f7f4;
 }
 
-.header__info-cart a {
+.header__info-cart > a {
 	color: #fff;
 	border: none;
 }
 
-.header__info-cart:hover a {
+.header__info-cart.active > a,
+.header__info-cart:hover > a {
 	color: #323232;
 }
 
-.header__info-cart:hover .icon-cart {
+.header__info-cart:hover .icon-cart,
+.header__info-cart.active .icon-cart {
 	background-position: -46px -22px;
 }
 
 .header__info-worktime {
 	position: absolute;
-	bottom: -50px;
+	bottom: -54px;
 	right: 0;
 	font-size: 14px;
 	font-weight: 700;
