@@ -1722,7 +1722,7 @@ span.filters__label-mixins {
   top: -100px;
   left: 37%;
   padding: 20px;
-  display: none;
+  /*display: none;*/
   width: 480px;
   min-height: 380px;
   color: #000000;
@@ -1762,7 +1762,7 @@ span.filters__label-mixins {
 }
 
 .map__modal-form {
-
+	position: relative;
 }
 
 .map__modal-form input {
@@ -1770,7 +1770,7 @@ span.filters__label-mixins {
 	height: 40px;
 	padding: 0 20px;
 	box-sizing: border-box;
-	border: 1px solid #d3d3d2;
+	border: 2px solid #d3d3d2;
 	border-radius: 5px;
 	margin-bottom: 20px;
 	font-size: 16px;
@@ -1780,10 +1780,53 @@ span.filters__label-mixins {
 	font-family: 'Roboto', Arial, sans-serif;
 }
 
+.map__modal-form i {
+	display: none;
+	font-size: 11px;
+	line-height: 24px;
+	font-weight: 500;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #5b9ddf;
+	position: absolute;
+	left: 20px;
+	font-style: normal;
+}
+
+.map__modal-form input:hover,
+.map__modal-form textarea:hover {
+	border: 2px solid #c7c6c5;
+}
+
+.map__modal-form input:focus,
+.map__modal-form input:focus:hover,
+.map__modal-form textarea:focus,
+.map__modal-form textarea:focus:hover {
+	border: 2px solid #8fbdec;
+}
+
+.map__modal-form input:valid {
+	color: red;
+}
+
+.map__modal-name:focus + i {
+	display: inline-block;
+	top: -20px;
+}
+
+.map__modal-mail:focus + i {
+	display: inline-block;
+	top: 40px;
+}
+
+.map__modal-message:focus + i {
+	display: inline-block;
+	top: 100px;
+}
+
 .map__modal-form textarea {
 	padding: 10px 20px;
 	box-sizing: border-box;
-	border: 1px solid #d3d3d2;
+	border: 2px solid #d3d3d2;
 	border-radius: 5px;
 	margin-bottom: 20px;
 	width: 100%;
