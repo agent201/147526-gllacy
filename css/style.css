@@ -1230,21 +1230,25 @@ p.map__last-p {
 
 .filters__sort-arrow {
 	display: inline-block;
-	width: 10px;
-	height: 16px;
+	width: 7px;
+	height: 5px;
 	position: absolute;
-	top: 30px;
+	top: 40px;
 	right: 20px;
 	color: #fff;
+	background: url(../img/arrow.png) no-repeat 0 -5px;
 }
 
-.filters__wrap-sort select:hover {
+.filters__wrap-sort select:hover,
+.filters__wrap-sort select:focus {
 	background: #fff;
 	color: #343434;
 }
 
-.filters__wrap-sort select:hover + .filters__sort-arrow {
+.filters__wrap-sort select:hover + .filters__sort-arrow,
+.filters__wrap-sort select:focus + .filters__sort-arrow {
 	color: #343434;
+	background-position: 0 0;
 }
 
 .filters__wrap-price {
@@ -1722,7 +1726,7 @@ span.filters__label-mixins {
   top: -100px;
   left: 37%;
   padding: 20px;
-  /*display: none;*/
+  display: none;
   width: 480px;
   min-height: 380px;
   color: #000000;
@@ -1802,10 +1806,6 @@ span.filters__label-mixins {
 .map__modal-form textarea:focus,
 .map__modal-form textarea:focus:hover {
 	border: 2px solid #8fbdec;
-}
-
-.map__modal-form input:valid {
-	color: red;
 }
 
 .map__modal-name:focus + i {

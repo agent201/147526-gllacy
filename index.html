@@ -287,16 +287,15 @@
 				<form class="map__modal-form" action="#" method="post">
 					<input class="map__modal-name" type="text" name="name" placeholder="Как вас зовут?"><i>Как вас зовут?</i>
 					<input class="map__modal-mail" type="text"  name="mail" placeholder="Ваша почта для ответа?"><i>Ваша почта для ответа?</i>
-					<textarea class="map__modal-message" name="message" placeholder="Напишите что нибудь..."></textarea><i>Напишите что нибудь...</i><br>
+					<textarea class="map__modal-message" name="message" placeholder="Напишите что нибудь..."></textarea><i>Напишите что нибудь...</i>
 					<button class="map__modal-submit btn-red" type="submit">Войти</button>
 				</form>
 			</div>
 
 			<div class="map__script">
-				 <!-- yandex-map -->
 	<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
-<script type="text/javascript"><!--
+<script type="text/javascript">
 ymaps.ready(init);
 
 function init () {
@@ -326,10 +325,8 @@ function init () {
 	map.geoObjects.add(placemark);
 	map.behaviors.disable('scrollZoom');
 }
-// -->
 </script>
 	<div style="width: 100%; height: 430px;" id="contactmap"></div>
-	<!-- /yandex-map -->
 			</div>
 		</section>
 
