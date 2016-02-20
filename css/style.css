@@ -882,14 +882,17 @@ td.header__product-img {
 	font-family: 'Roboto', Arial, sans-serif;
 	text-shadow: 0 1px 3px #313235;
 	position: absolute;
-	bottom: 20px;
+	bottom: -5px;
 }
 
 .catalog__price b {
 	display: inline-block;
-	height: 45px;
+	height: 55px;
+	line-height: 55px;
 	width: 30px;
-	background: url(../img/rub.png) no-repeat 0 100%;
+	font-size: 0;
+	margin-left: 5px;
+	background: url(../img/rub.png) no-repeat 100% 0%;
 }
 
 .catalog__price span {
@@ -902,6 +905,11 @@ td.header__product-img {
 	line-height: 22px;
 	display: inline-block;
 	margin-top: -4px;
+	border: none;
+}
+
+.catalog__item a span {
+	border-bottom: 1px solid #a9bbb1;
 }
 
 /* about */
@@ -1357,8 +1365,7 @@ p.map__last-p {
 	top: 8px;
 }
 
-.filters__checkbox-fat::after {
-	content: '';
+.filters__checkbox-fat span {
 	display: inline-block;
 	position: absolute;
 	width: 12px;
@@ -1382,7 +1389,7 @@ p.map__last-p {
 	margin-right: 10px;
 }
 
-.filters__checkbox-fat.last::after {
+.filters__checkbox-fat.last span {
 	content: '';
 	margin-right: 0;
 }
@@ -1476,7 +1483,7 @@ span.filters__label-mixins {
 }
 
 .catalog-page .catalog__price {
-	bottom: 40px;
+	bottom: 0px;
 	top: auto;
 }
 
