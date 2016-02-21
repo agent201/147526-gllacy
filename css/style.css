@@ -91,9 +91,8 @@ h2 {
 	color: #fff;
 	font-family: 'Roboto', Arial, sans-serif;
 	text-decoration: none;
+	background: -webkit-linear-gradient(bottom, #e74b36, #f26843);
 	background: linear-gradient(to top, #e74b36, #f26843);
-	background: -moz-linear-gradient(to top, #e74b36, #f26843);
-	background: -o-linear-gradient(to top, #e74b36, #f26843);
 	background: -webkit-linear-gradient(to top, #e74b36, #f26843);
 	box-shadow: 0 2px 2px #975a4b;
 	text-shadow: 0px 2px 5px #a0200b;
@@ -103,9 +102,8 @@ h2 {
 .btn-red:hover {
 	background: #f58669;
 	color: #fff;
+	background: -webkit-linear-gradient(bottom, #ec6f5e, #f58669);
 	background: linear-gradient(to top, #ec6f5e, #f58669);
-	background: -moz-linear-gradient(to top, #ec6f5e, #f58669);
-	background: -o-linear-gradient(to top, #ec6f5e, #f58669);
 	background: -webkit-linear-gradient(to top, #ec6f5e, #f58669);
 	box-shadow: 0 2px 2px #975a4b;
 }
@@ -113,9 +111,8 @@ h2 {
 .btn-red:active {
 	background: #d84732;
 	color: #fff;
+	background: -webkit-linear-gradient(bottom, #d84732, #e1613e);
 	background: linear-gradient(to top, #d84732, #e1613e);
-	background: -moz-linear-gradient(to top, #d84732, #e1613e);
-	background: -o-linear-gradient(to top, #d84732, #e1613e);
 	background: -webkit-linear-gradient(to top, #d84732, #e1613e);
 	box-shadow: inset 0 2px 2px #975a4b;
 	border-bottom: none;
@@ -1504,7 +1501,8 @@ p.map__last-p {
 	height: 4px;
 	top: 5px;
 	left: 4px;
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 
 .filters__wrap-mixins input:checked + .filters__checkbox-mix::after  {
@@ -1859,7 +1857,8 @@ span.filters__label-mixins {
 	display: inline-block;
 	float: right;
 	padding: 5px;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 	margin: -10px -10px 0 0;
 	cursor: pointer;
 }
