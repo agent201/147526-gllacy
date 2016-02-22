@@ -1223,7 +1223,7 @@ p.map__last-p {
 }
 
 .filters {
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 	line-height: 0;
 	font-size: 0;
 }
@@ -1240,7 +1240,7 @@ p.map__last-p {
 .filters__label-mixins {
 	color: #fff;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 15px;
 	margin-bottom: 6px;
 	font-weight: 500;
 	padding-left: 16px;
@@ -1513,7 +1513,7 @@ p.map__last-p {
 	width: 23.1%;
 	float: left;
 	text-align: center;
-	padding: 0 0 75px 0;
+	padding: 0 0 80px 0;
 	position: relative;
 	margin-bottom: -40px;
 }
@@ -1523,7 +1523,7 @@ p.map__last-p {
 }
 
 .catalog-page .catalog__price {
-	bottom: 11px;
+	bottom: 8px;
 	top: auto;
 }
 
@@ -1538,7 +1538,7 @@ p.map__last-p {
 }
 
 .content__footer {
-	margin-top: 41px;
+	margin-top: 31px;
 }
 
 .pagination {
