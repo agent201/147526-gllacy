@@ -1085,25 +1085,21 @@ td.header__product-img {
 .news__sendmail {
 	width: 48.86%;
 	float: right;
-	background: url('../img/sendmail.png') no-repeat;
+	background: url('../img/sendmail-brd1.png');
 	border-radius: 15px;
 	min-height: 220px;
-	padding: 38px 2.5% 10px 2.5%;
+	padding: 5px;
 	box-sizing: border-box;
 	position: relative;
 }
 
-.news__sendmail::after {
-	content: '';
-	display: block;
-	height: 220px;
-	width: 19px;
-	position: absolute;
-	transform: rotate(180deg);
-	right: 0;
-	top: 0;
-	border-radius: 0 15px 15px 0;
-	background: url('../img/sendmail.png') no-repeat;
+.news__sendmail-in {
+	background: #F8F7F4;
+	width: 100%;
+	box-sizing: border-box;
+	min-height: 210px;
+	border-radius: 15px;
+	padding: 38px 2.5% 10px 2.5%;
 }
 
 .news__sendmail p {
@@ -1822,7 +1818,8 @@ p.map__last-p {
 
 .map__modal {
 	position: absolute;
-	transform: translateY(-4000px);
+	/*transform: translateY(-4000px);*/
+	display: none;
 	top: -100px;
 	left: 37%;
 	padding: 20px;

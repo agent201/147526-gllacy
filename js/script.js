@@ -63,12 +63,15 @@ map__form_link.addEventListener("click", function(event) {
 	map__modal.classList.remove("close");
 	map__modal.classList.toggle("active");
 	popup__overlay.classList.toggle("active");
+	map__modal.style.display="block";
 	return false;
 });
 
 map__modal_close.addEventListener("click", function(event) {
-	//map__modal.classList.toggle("active");
 	map__modal.classList.add("close");
 	popup__overlay.classList.toggle("active");
 	map__modal.classList.toggle("active");
+	setTimeout(function(){
+		map__modal.style.display="none";
+	},1000);
 });
