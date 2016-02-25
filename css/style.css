@@ -1110,6 +1110,12 @@ td.header__product-img {
 	margin: -7px 0 38px 0;
 }
 
+@media (max-width: 1080px) and (min-width: 600px) {
+	.news__sendmail p {
+		margin-bottom: 18px;
+	}
+}
+
 .news__input-mail {
 	width: 73%;
 	box-sizing: border-box;
