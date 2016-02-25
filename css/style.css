@@ -331,6 +331,7 @@ h2 {
 .header__search-input:focus {
 	border: 2px solid #8fbdec;
 	padding: 0px 10px;
+	outline: none;
 }
 
 .header__info-search:hover {
@@ -425,6 +426,7 @@ h2 {
 .header__login-passwd:focus {
 	border: 2px solid #8fbdec;
 	padding: 0px 10px;
+	outline: none;
 }
 
 .header__login-links {
@@ -1137,6 +1139,7 @@ td.header__product-img {
 .news__input-mail:focus {
 	border: 2px solid #8fbdec;
 	padding: 0 9px;
+	outline: none;
 }
 
 @media (max-width: 1090px) and (min-width: 600px) {
@@ -1167,7 +1170,7 @@ td.header__product-img {
 }
 
 #contactmap {
-	min-width: 980px;
+	min-width: 900px;
 }
 
 .map__address {
@@ -1910,6 +1913,7 @@ p.map__last-p {
 .map__modal-form textarea:focus,
 .map__modal-form textarea:focus:hover {
 	border: 2px solid #8fbdec;
+	outline: none;
 }
 
 .map__modal-name:focus + i {
